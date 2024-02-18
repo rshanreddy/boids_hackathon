@@ -1,0 +1,121 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align the items */
+    justify-content: start; /* Align items to the start of the page */
+    min-height: 100vh; /* Minimum height of 100% of the viewport height */
+    margin: 0;
+    padding: 20px 0; /* Add some padding at the top and bottom */
+    background-color: #0f0f0f; /* Dark background */
+    color: #f0f0f0; /* Light text */
+    font-size: 16px; /* Larger font size */
+    line-height: 1.6; /* Improved line spacing */
+  }
+
+  
+  #info {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 20px; /* Adds padding on the left and right */
+  }  
+
+  #resetButton {
+    display: block;
+    margin: 20px auto; /* Centers the button */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #canvas-container {
+    display: inline-block; /* Makes the div inline but block-level */
+    background-color: #ccc; /* Gray background for the canvas */
+    margin: 0 auto; /* Center align the canvas container */
+    margin: 20px auto;
+    border: 1px solid #555; /* Adds a subtle border around the canvas */
+  }
+  
+  #controls {
+    margin-top: 20px; /* Space between canvas and controls */
+    display: flex; /* Aligns child elements (sliders) horizontally */
+    justify-content: center; /* Centers the sliders horizontally */
+    flex-wrap: wrap; /* Allows sliders to wrap into next line if space is insufficient */
+  }
+  
+  .slider-container {
+    margin: 0 10px; /* Space between sliders */
+  }
+  
+  p {
+    margin: 5px 0; /* Spacing for paragraph elements */
+  }
+  
+  #controls {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px; /* Adds space between controls */
+    margin-top: 20px;
+  }
+  
+  .slider-container {
+    background: #333; /* Dark background for each slider container */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  button {
+    background-color: #444; /* Dark background for buttons */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #555; /* Lighter background on hover */
+  }
+
+  #info h1, #info p {
+    margin: 0 auto; /* Center align the text */
+    max-width: 1000px; /* Maximum width for readability */
+  }
+  
+  #info h1 {
+    font-weight: 700; /* Bold font for the title */
+    margin-top: 20px; /* Spacing at the top */
+    padding: 25px
+  }
+  
+  #info p {
+    font-weight: 400; /* Regular font weight for the description */
+  }  
+
+  .collapsible {
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    color: black;
+  }
+  

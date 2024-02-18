@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Jammer Location Simulation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="info">
+        <h1>Applying BOIDs Flocking to Enable RF Jammer Triangulation on Low-Compute Devices</h1>
+        <p> Biomimicry is a technique widely used in engineering that consists of mimicking 
+            behaviours, shapes etc. from nature to solve human problems. If implemented correctly, 
+            this can quickly give rise to large, multi-agent systems which demonstrate individually 
+            complex behaviour, yet simultaneously create a unified effect for the flock as a whole. 
+            <br><br>
+
+            Here, we show that the BOIDs algorithm can be implemented on low-power embedded systems to detect, 
+            identify and distinguish interference radio jamming strength and potentially unintentional 
+            interference such as Bluetooth and WiFi to a certain degree. Each drone in the simulation is 
+            equipped with a radar receiver that detects signals from the RF jammer. By leveraging the relative angles 
+            of the signals received from multiple drones, along with their own position, the drones collaboratively 
+            triangulate the location of the jammer based on evaluating anomalies in the jammer's strength.<br><br>
+
+            Here, we show that BOIDs can be implemented to enable a flock of low-compute drones 
+            in a 2D environment to hunt for a jammer, which is treated as a static centroid 
+            in the flocking algorithm with an attraction force that can be tuned from 0.1 to 1.0. 
+            <br><br>
+            
+            Using BOIDs principles, the drones adjust their positions based on simple rules: attraction 
+            to areas of stronger jamming signals (alignment and cohesion), avoidance of obstacles or 
+            hazardous zones (separation), and movement towards the estimated source of jamming (goal-oriented behavior).
+            <br><br>
+            
+        </p>            
+    </div>
+    <div id="canvas-container">
+        <!-- The canvas will be inserted here by p5.js -->
+    </div>
+    <div id="controls">
+        <!-- Sliders will be created by p5.js and placed here -->
+    </div>
+    <script src="sketch.js"></script>
+</body>
+
+<div id="controls">
+    <!-- ... your sliders ... -->
+</div>
+
+<!-- Reset Button -->
+<button id="resetButton">Reset Simulation</button>
+</html>
